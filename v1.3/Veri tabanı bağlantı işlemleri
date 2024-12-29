@@ -1,0 +1,13 @@
+Veri tabanı oluşturma
+
+CREATE DATABASE 2FA DEFAULT CHARACTER SET utf8 COLLATE utf8_turkish_ci;
+
+Tablo oluşturma
+
+CREATE TABLE 2FA(
+
+    id SMALLINT AUTO_INCREMENT PRIMARY KEY,
+    2FA_Code varchar(6) NOT NULL,
+    Kayıt_Tarih datetime DEFAULT CURRENT_TIMESTAMP
+);
+
